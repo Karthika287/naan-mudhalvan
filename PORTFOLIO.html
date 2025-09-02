@@ -1,0 +1,252 @@
+PORTFOLIO
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Karthika P - Graphic Designer</title>
+  <style>
+    :root {
+      --primary-color: #ff5c5c;
+      --background: #fff8f4;
+      --text-color: #2e2e2e;
+      --accent: #333;
+      --card-bg: #ffffff;
+      --shadow: rgba(0, 0, 0, 0.1);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: var(--background);
+      color: var(--text-color);
+    }
+
+    header {
+      text-align: center;
+      padding: 60px 20px 40px;
+      background: linear-gradient(135deg, #ffb6b9, #ffe0ac);
+      color: var(--accent);
+    }
+
+    header h1 {
+      font-size: 3em;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.2em;
+      color: #444;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+
+    section {
+      margin-bottom: 50px;
+    }
+
+    h2 {
+      font-size: 2em;
+      margin-bottom: 20px;
+      color: var(--primary-color);
+    }
+
+    .about p {
+      font-size: 1.1em;
+      line-height: 1.8;
+    }
+
+    .contact a {
+      color: var(--primary-color);
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+    }
+
+    .project-card {
+      background: var(--card-bg);
+      border-radius: 10px;
+      box-shadow: 0 4px 12px var(--shadow);
+      padding: 20px;
+      transition: transform 0.2s ease;
+    }
+
+    .project-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .project-title {
+      font-size: 1.3em;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .project-desc {
+      font-size: 0.95em;
+      color: #555;
+    }
+
+    .skills ul {
+      list-style-type: none;
+      line-height: 1.8;
+    }
+
+    .skills li {
+      font-size: 1.1em;
+      color: #333;
+    }
+
+    .education ul {
+      list-style-type: none;
+    }
+
+    .education li {
+      font-size: 1.1em;
+      margin-bottom: 10px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      background-color: #fbeaea;
+      color: #666;
+      font-size: 0.9em;
+    }
+
+    /* Responsive tweak */
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2em;
+      }
+
+      .container {
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Karthika P</h1>
+    <p>Creative Graphic Designer</p>
+  </header>
+
+  <div class="container">
+
+    <!-- About Section -->
+    <section class="about">
+      <h2>About Me</h2>
+      <p>Hello! I'm Karthika, a graphic designer passionate about blending creativity with purpose. With a flair for minimalist and bold designs, I specialize in branding, visual identity, and promotional content. My goal is to create work that not only looks good but also communicates meaningfully.</p>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact">
+      <h2>Contact</h2>
+      <p>📧 <a href="mailto:karthika23@gmail.com">karthika23@gmail.com</a></p>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills">
+      <h2>Skills</h2>
+      <h3>Technical Skills</h3>
+      <ul>
+        <li>Adobe Photoshop</li>
+        <li>Adobe Illustrator</li>
+        <li>Adobe InDesign</li>
+        <li>CorelDRAW</li>
+        <li>Prototyping (Figma, Sketch)</li>
+        <li>3D Design (Blender)</li>
+        <li>HTML/CSS Basics</li>
+      </ul>
+
+      <h3>Creative Skills</h3>
+      <ul>
+        <li>Brand Identity Design</li>
+        <li>Print and Digital Layouts</li>
+        <li>Typography</li>
+        <li>Logo Design</li>
+        <li>UI/UX Design</li>
+        <li>Creative Conceptualization</li>
+        <li>Photography & Photo Manipulation</li>
+      </ul>
+    </section>
+
+    <!-- Education Section -->
+    <section class="education">
+      <h2>Education</h2>
+      <ul>
+        <li><strong>Bachelor of Fine Arts (BFA)</strong> - Graphic Design, XYZ University (2018 - 2022)</li>
+        <li><strong>Diploma in Graphic Design</strong> - ABC Institute (2017 - 2018)</li>
+        <li><strong>Certificate in UX/UI Design</strong> - Coursera (2023)</li>
+        <li><strong>Certificate in Photography</strong> - Udemy (2022)</li>
+      </ul>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="portfolio">
+      <h2>My Projects</h2>
+      <div class="projects">
+
+        <div class="project-card">
+          <div class="project-title">1. Logo Design – Bloom</div>
+          <div class="project-desc">A soft, elegant logo for a wellness brand that reflects growth, care, and balance using pastel tones and floral iconography.</div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-title">2. Poster Series – Music Fest</div>
+          <div class="project-desc">A vibrant series of posters for an indie music festival, using abstract shapes and bold color contrasts to capture attention.</div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-title">3. Branding Kit – Café Coco</div>
+          <div class="project-desc">Complete visual identity for a boutique coffee shop, including logo, packaging, business cards, and Instagram templates.</div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-title">4. Infographic – Climate Impact</div>
+          <div class="project-desc">An educational infographic for a sustainability NGO, breaking down climate data with illustrations and easy-to-read charts.</div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-title">5. Social Media Pack – Yoga Studio</div>
+          <div class="project-desc">Custom Instagram & Facebook posts promoting classes, events, and tips for a modern yoga studio brand.</div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-title">6. Packaging Design – NaturLeaf</div>
+          <div class="project-desc">Eco-friendly packaging designs for an organic skincare line, combining earth tones with hand-drawn illustrations.</div>
+        </div>
+
+      </div>
+    </section>
+
+  </div>
+
+  <footer>
+    &copy; 2025 Karthika P. All rights reserved.
+  </footer>
+
+</body>
+</html>
+
+ 
+ 
+  
+

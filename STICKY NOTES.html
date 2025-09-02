@@ -1,0 +1,104 @@
+STICKY NOTES
+CODE:
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Vintage Sticky Notes - Dark Brown Theme</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+
+    body {
+      background-color: #f5f1e7;
+      font-family: 'Patrick Hand', cursive;
+      margin: 0;
+      padding: 40px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+
+      /* Background with vintage icons: ink bottle, pen, flower, book */
+      background-image: url("data:image/svg+xml,%3Csvg width='160' height='160' viewBox='0 0 160 160' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg stroke='%234B2E05' stroke-width='1.5' stroke-opacity='0.1' fill='none'%3E%3Cpath d='M30 120 L30 140 L50 140 L50 120 Z' /%3E%3Cpath d='M45 135 L35 135 L35 125 L45 125 Z' /%3E%3Ccircle cx='40' cy='130' r='3' fill='%234B2E05' fill-opacity='0.1'/%3E%3Cpath d='M90 110 L90 130 L110 130 L110 110 Z' /%3E%3Cpath d='M105 125 L95 125 L95 115 L105 115 Z' /%3E%3Ccircle cx='100' cy='120' r='4' fill='%234B2E05' fill-opacity='0.1'/%3E%3Cpath d='M60 40 L80 80 L100 40' /%3E%3Cpath d='M80 80 L75 90 L85 90 L80 80 Z' /%3E%3Ccircle cx='80' cy='70' r='6' fill='%234B2E05' fill-opacity='0.1'/%3E%3Cpath d='M120 40 C115 30 105 30 100 40 S90 50 95 60' /%3E%3Ccircle cx='110' cy='50' r='8' fill='%234B2E05' fill-opacity='0.1'/%3E%3C/g%3E%3C/svg%3E");
+      background-repeat: repeat;
+      background-size: 160px 160px;
+    }
+
+    .sticky-note {
+      position: -webkit-sticky;
+      position: sticky;
+      top: 20px;
+      width: 220px;
+      min-height: 180px;
+      background: #fff1b8;
+      box-shadow:
+        3px 3px 7px rgba(75, 46, 5, 0.3),
+        inset 0 0 15px #f7e596;
+      border: 1.5px solid #4B2E05;
+      border-radius: 12px;
+      padding: 20px 18px 24px 18px;
+      color: #4B2E05;
+      font-size: 18px;
+      line-height: 1.4;
+      transform: rotate(-2deg);
+      transition: transform 0.2s ease;
+      user-select: none;
+      cursor: default;
+      position: relative;
+      z-index: 5;
+    }
+
+    .sticky-note:hover {
+      transform: rotate(0deg) scale(1.05);
+      box-shadow:
+        5px 5px 15px rgba(75, 46, 5, 0.5),
+        inset 0 0 18px #f7e596;
+      z-index: 10;
+    }
+
+    .sticky-note::before,
+    .sticky-note::after {
+      content: "";
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      background: #fff1b8;
+      border: 1.5px solid #4B2E05;
+      border-radius: 50% / 20%;
+      box-shadow: inset 3px 3px 6px #f7e596;
+      pointer-events: none;
+    }
+    .sticky-note::before {
+      top: 8px;
+      left: -14px;
+      transform: rotate(20deg);
+    }
+    .sticky-note::after {
+      bottom: 8px;
+      right: -14px;
+      transform: rotate(-15deg);
+    }
+
+  </style>
+</head>
+<body>
+
+<div class="sticky-note">
+  <strong>Note 1:</strong><br>
+  "Opportunities don't happen.<br> you create them."
+</div>
+
+<div class="sticky-note">
+  <strong>Note 2:</strong><br>
+  "Old books, warm tea, and a quiet mind<br> — the perfect companions for inspiration."
+</div>
+
+<div class="sticky-note">
+  <strong>Note 3:</strong><br>
+  "In every wrinkle of time, stories unfold.
+</div>
+
+</body>
+</html>
+
